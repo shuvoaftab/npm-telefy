@@ -8,11 +8,19 @@ A simple but robust npm package to send Telegram notifications via a bot, with C
 
 ## Screenshots
 
-<div>
-    <img src="assets/images/telefy-message.png" width="500px" height="auto">
-    <img src="assets/images/telefy-help.png" width="600px" height="auto">
-    <img src="assets/images/telefy-test.png" width="1100px" height="auto">
-</div>
+Here are some screenshots showcasing the usage of **telefy**:
+
+### Sending a Message
+
+![Message Example](assets/images/telefy-message.jpg)
+
+### CLI Help Command
+
+![Help Command](assets/images/telefy-help.jpg)
+
+### Running Tests
+
+![Test Example](assets/images/telefy-test.jpg)
 
 ## Features
 
@@ -63,9 +71,9 @@ You can easily integrate Telegram notifications into your Node.js app using a Te
 1. Start a chat with your new bot on Telegram.
 2. Visit this URL in a browser:
 
-   ```http
-   https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
-   ```
+```bash
+https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
+```
 
 3. Send a message to your bot (e.g., "Hi").
 4. Check back the JSON response in the browser for `"chat":{"id":YOUR_CHAT_ID}`.
