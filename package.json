@@ -1,0 +1,60 @@
+{
+  "name": "telefy",
+  "version": "1.0.0",
+  "description": "A simple but robust npm package to send Telegram notifications via a bot, with CLI support for Node.js apps.",
+  "author": "Ibrahim Sharif <ibrahimsharif.com@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/shuvoaftab/npm-telefy#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuvoaftab/npm-telefy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shuvoaftab/npm-telefy/issues"
+  },
+
+  "main": "telegramBot.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./telegramBot.js"
+    }
+  },
+  "bin": {
+    "telefy": "./bin/cli.js"
+  },
+
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "prepare": "echo 'Ensure .env is set up with TELEGRAM_BOT_TOKEN and CHAT_ID. See .env.sample.'"
+  },
+
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+
+  "keywords": [
+    "telegram",
+    "notification",
+    "bot",
+    "messaging",
+    "cli",
+    "nodejs",
+    "telegram-bot",
+    "telegram-notification",
+    "telegram-cli",
+    "telegram-notifier",
+    "telefy"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
