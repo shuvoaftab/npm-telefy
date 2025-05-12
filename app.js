@@ -4,7 +4,7 @@
  * @description This script demonstrates how to send a Telegram message using the Telegram Bot API.
  * @description It uses the sendTGMessage and sendTGMessageWithButtons functions from telegramBot.js.
  * @author Ibrahim Sharif
- * @version 1.0.0
+ * @version 1.1.0
  * @date 2025-05-12
  * @license MIT
  * 

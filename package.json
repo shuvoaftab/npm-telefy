@@ -1,7 +1,7 @@
 {
   "name": "telefy",
-  "version": "1.0.1",
-  "description": "A simple but robust npm package to send Telegram notifications via a bot, with CLI support for Node.js apps.",
+  "version": "1.1.0",
+  "description": "A simple but robust npm package to send Telegram notifications via a bot to Multiple Channel support with CLI support.",
   "author": "Ibrahim Sharif <ibrahimsharif.com@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/shuvoaftab/npm-telefy#readme",
@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "node bin/cli.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "prepare": "echo 'Ensure .env is set up with TELEGRAM_BOT_TOKEN and CHAT_ID. See .env.sample.'"
   },
   "dependencies": {
@@ -48,7 +48,14 @@
     "telegram-notification",
     "telegram-cli",
     "telegram-notifier",
-    "telefy"
+    "telefy",
+    "multichannel",
+    "multiple-channel",
+    "multiple-channel-support",
+    "multiple-channel-notification",
+    "multiple-channel-bot",
+    "multiple-channel-messaging",
+    "multiple-channel-cli"
   ],
   "publishConfig": {
     "access": "public"
